@@ -80,24 +80,24 @@ Using your favorite graphing software (e.g., MS Excel or Google Sheets), plot th
 each case. Take a screenshot of your graph and put them here by modifying this file, committing, and pushing
 it to this repository.
 
-Insertion, search, and deletion running time (already sorted):
+Insertion, search, and deletion running time (already sorted):     
+![Insert, Search and Deletion Running Time (Already Sorted)](https://github.com/user-attachments/assets/058db592-f394-43bb-8177-fa868804541e)
 
-![Firefly picture of a cat 86147](https://github.com/user-attachments/assets/8b2d008e-3011-4979-97b8-fa2e9886a01a)
+Insertion, search, and deletion running time (shuffled):     
+![Insert, Search and Deletion Running Time (Shuffled)](https://github.com/user-attachments/assets/4b501bcc-9430-43d7-a0ce-b4d812c0a75e)
 
-
-Insertion, search, and deletion running time (shuffled):
-
-Insertion, search, and deletion running time (reversed):
+Insertion, search, and deletion running time (reversed):     
+![Insert, Search and Deletion Running Time (Reversed)](https://github.com/user-attachments/assets/648bf0a6-4001-474d-a0eb-69083fd2e8f6)
 
 ## 5. **Document your Dataset and Results**
 Document the source of your dataset and any modifications you made to it. Describe the results of your analysis and 
 how it compares to the theoretical performance of the hash table operations.
 
-Dataset Source: // FINISH ME
+Dataset Source: https://www.kaggle.com/datasets/mohammadrizwansajjad/top-200-movies-of-2023
 
-Dataset Modifications ("None" if unchanged): // FINISH ME
+Dataset Modifications ("None" if unchanged): I deleted two columns that are ranking and theater, since I consider them not super helpful for my analysis of the dataset. I also modified the titles of the movies into a cleaner format in order to reduce confusion regarding some symbols in the movie titles.
 
-Result Analysis: // FINISH ME
+Result Analysis: due to the unique nature of my dataset, the operations of insert, search, and delete are all the fastest on the shuffled list, followed by reversed list, and the operations on sorted list is the slowest. All operations slow down as dataset size increases, but shuffled list scales better. Regarding theoretical performance, the theoretical O(1) average-case performance for hash tables holds true for shuffled lists. Sorted and reversed lists approach O(n) due to clustering.
 
 ## Submission:
 

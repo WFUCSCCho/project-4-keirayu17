@@ -1,3 +1,9 @@
+/***
+ * @file: SeparateClainingHashTable.java
+ * @description: Implementation of a hash table.
+ * @author: Keira Yu
+ * @date: December 5, 2024
+ */
 import java.util.LinkedList;
 import java.util.List;
 
@@ -38,7 +44,13 @@ public class SeparateChainingHashTable<AnyType> {
      * @param x the item to insert.
      */
     public void insert(AnyType x) {
-        // FINISH ME
+        List<AnyType> whichList = theLists[myhash(x)];
+        if (!whichList.contains(x)) {
+            whichList.add(x);
+            if (++currentSize > theLists.length){
+                rehash();
+            }
+        }
     }
 
     /**
@@ -47,7 +59,11 @@ public class SeparateChainingHashTable<AnyType> {
      * @param x the item to remove.
      */
     public void remove(AnyType x) {
-        // FINISH ME
+        List <AnyType> whichList = theLists[myhash(x)];
+        if (whichList.contains(x)) {
+            whichList.remove(x);
+            currentSize--;
+        }
     }
 
     /**
@@ -57,14 +73,18 @@ public class SeparateChainingHashTable<AnyType> {
      * @return true if x is not found.
      */
     public boolean contains(AnyType x) {
-        // FINISH ME
+        List <AnyType> whichList = theLists[myhash(x)];
+        return whichList.contains(x);
     }
 
     /**
      * Make the hash table logically empty.
      */
     public void makeEmpty() {
-        // FINISH ME
+        for (int i = 0; i < theLists.length; i++){
+            theLists[i].clear();
+        }
+        currentSize = 0;
     }
 
     /**
@@ -88,7 +108,21 @@ public class SeparateChainingHashTable<AnyType> {
     }
 
     private void rehash() {
-        // FINISH ME
+        List<AnyType> [] oldLists = theLists;
+
+        // Create new double-sized, empty table
+        theLists = new List[nextPrime(2 * theLists.length)];
+        for (int j = 0; j < theLists.length; j++){
+            theLists[j] = new LinkedList<>();
+        }
+
+        // Copy table over
+        currentSize = 0;
+        for (List<AnyType> list : oldLists){
+            for (AnyType item : list){
+                insert(item);
+            }
+        }
     }
 
     private int myhash(AnyType x) {
