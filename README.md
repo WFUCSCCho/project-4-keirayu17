@@ -93,11 +93,11 @@ Insertion, search, and deletion running time (reversed):
 Document the source of your dataset and any modifications you made to it. Describe the results of your analysis and 
 how it compares to the theoretical performance of the hash table operations.
 
-Dataset Source: // FINISH ME
+Dataset Source: https://www.kaggle.com/datasets/mohammadrizwansajjad/top-200-movies-of-2023
 
-Dataset Modifications ("None" if unchanged): // FINISH ME
+Dataset Modifications ("None" if unchanged): I deleted two columns that are ranking and theater, since I consider them not super helpful for my analysis of the dataset. I also modified the titles of the movies into a cleaner format in order to reduce confusion regarding some symbols in the movie titles.
 
-Result Analysis: // FINISH ME
+Result Analysis: due to the unique nature of my dataset, the operations of insert, search, and delete are all the fastest on the shuffled list, followed by reversed list, and the operations on sorted list is the slowest. All operations slow down as dataset size increases, but shuffled list scales better. Regarding theoretical performance, the theoretical O(1) average-case performance for hash tables holds true for shuffled lists. Sorted and reversed lists approach O(n) due to clustering.
 
 ## Submission:
 
