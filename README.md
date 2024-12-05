@@ -80,13 +80,13 @@ Using your favorite graphing software (e.g., MS Excel or Google Sheets), plot th
 each case. Take a screenshot of your graph and put them here by modifying this file, committing, and pushing
 it to this repository.
 
-Insertion, search, and deletion running time (already sorted):
+Insertion, search, and deletion running time (already sorted):     
 ![Insert, Search and Deletion Running Time (Already Sorted)](https://github.com/user-attachments/assets/058db592-f394-43bb-8177-fa868804541e)
 
-Insertion, search, and deletion running time (shuffled):
+Insertion, search, and deletion running time (shuffled):     
 ![Insert, Search and Deletion Running Time (Shuffled)](https://github.com/user-attachments/assets/4b501bcc-9430-43d7-a0ce-b4d812c0a75e)
 
-Insertion, search, and deletion running time (reversed):
+Insertion, search, and deletion running time (reversed):     
 ![Insert, Search and Deletion Running Time (Reversed)](https://github.com/user-attachments/assets/648bf0a6-4001-474d-a0eb-69083fd2e8f6)
 
 ## 5. **Document your Dataset and Results**
