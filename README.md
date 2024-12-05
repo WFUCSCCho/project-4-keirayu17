@@ -81,7 +81,7 @@ each case. Take a screenshot of your graph and put them here by modifying this f
 it to this repository.
 
 Insertion, search, and deletion running time (already sorted):
-![Insert, Search and Deletion Running Time (Already Sorted)](https://github.com/user-attachments/assets/bfd55aaf-bef6-409f-befe-de68bbc12edc)
+![Insert, Search and Deletion Running Time (Already Sorted)](https://github.com/user-attachments/assets/058db592-f394-43bb-8177-fa868804541e)
 
 Insertion, search, and deletion running time (shuffled):
 ![Insert, Search and Deletion Running Time (Shuffled)](https://github.com/user-attachments/assets/4b501bcc-9430-43d7-a0ce-b4d812c0a75e)
