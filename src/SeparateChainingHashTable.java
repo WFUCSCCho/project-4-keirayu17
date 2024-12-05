@@ -1,3 +1,9 @@
+/***
+ * @file: SeparateClainingHashTable.java
+ * @description: Implementation of a hash table.
+ * @author: Keira Yu
+ * @date: December 5, 2024
+ */
 import java.util.LinkedList;
 import java.util.List;
 

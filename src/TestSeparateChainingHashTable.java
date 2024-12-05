@@ -1,3 +1,9 @@
+/***
+ * @file: TestSeparateChainingHashTable.java
+ * @description: Class for testing the hash table implementation.
+ * @author: Keira Yu
+ * @date: December 5, 2024
+ */
 public class TestSeparateChainingHashTable {
     public static void main( String [ ] args ) {
         SeparateChainingHashTable<Integer> H = new SeparateChainingHashTable<>( );

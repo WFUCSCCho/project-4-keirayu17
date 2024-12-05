@@ -1,3 +1,10 @@
+/***
+ * @file: Proj4.java
+ * @description: Main class for the project. It runs timing tests for operations on a hash table using
+ *               different lists.
+ * @author: Keira Yu
+ * @date: December 5, 2024
+ */
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
